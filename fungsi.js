@@ -1,4 +1,8 @@
-console.log("Hello World");
+const add = (a, b) => a + b;
+console.log(add(10, 5));
 
-const nama = "Budi";
-console.log(nama);
+const substract = (a, b) => a - b;
+console.log(substract(10, 5));
+
+const multiply = (a, b) => a * b;
+console.log(multiply(10, 5));
