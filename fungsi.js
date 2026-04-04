@@ -8,3 +8,5 @@ console.log(multiplyNumber(10, 5));
 
 const divide = (a, b) => a / b;
 console.log(divide(10, 5));
+
+console.log("Penambahan fitur pembagian");
