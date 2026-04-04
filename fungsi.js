@@ -10,3 +10,6 @@ const divide = (a, b) => a / b;
 console.log(divide(10, 5));
 
 console.log("Penambahan fitur pembagian");
+
+const add = (a, b) => a + b;
+console.log(add(10, 5));
