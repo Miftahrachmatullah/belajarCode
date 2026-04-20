@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh input atribut, checkbox & radio</title>
+</head>
+
+<body>
+  <h1>Contoh input atribut, checkbox & radio</h1>
+  <form>
+    <label for="name">Masukkan nama:
+      <input type="text" name="name" id="name" placeholder="Masukkan nama..." autocomplete="off" autofocus required>
+    </label>
+    <br>
+    <h3>Hobby:</h3>
+    <label for="hobby1">
+      <input type="checkbox" name="hobby1" id="hobby1" value="membaca">
+      Membaca
+    </label>
+    <br>
+    <label for="hobby2">
+      <input type="checkbox" name="hobby2" id="hobby2" value="olahraga">
+      Olahraga
+    </label>
+    <br>
+    <h3>Jenis kelamin:</h3>
+    <label for="male">
+      <input type="radio" name="gender" id="male" value="male">
+      Laki-laki
+    </label>
+    <br>
+    <label for="female">
+      <input type="radio" name="gender" id="female" value="female">
+      Perempuan
+    </label>
+    <br>
+    <button type="button">Submit</button>
+  </form>
+</body>
+
+</html>
