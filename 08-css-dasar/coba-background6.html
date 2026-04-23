@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coba Background Attachment</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eee;
+      height: 2000px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .kotak {
+      width: 300px;
+      height: 300px;
+      border: 10px solid #333;
+      margin: auto;
+      background-image: url(img/lego.png);
+      background-size: 60px;
+      background-repeat: round;
+      overflow: auto;
+      background-attachment: fixed;
+    }
+
+    .content {
+      color: #fff;
+      background-color: #fff;
+      line-height: 2;
+      background-color: black;
+      opacity: 70%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Coba Background Attachment</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, deleniti!</p>
+  <div class="kotak">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magni ratione dolores aspernatur? Possimus
+        consequatur cupiditate quo! Totam nostrum accusamus iste enim ratione, velit tenetur adipisci ipsam quas eveniet
+        voluptate!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit nostrum eos perspiciatis dolorum maiores
+        ab quam eaque officia error?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate odio cupiditate sit! Sit vero
+        consequuntur qui modi neque quibusdam, quasi sequi, laborum sunt culpa dolor iure labore nobis explicabo?</p>
+    </div>
+  </div>
+</body>
+
+</html>
