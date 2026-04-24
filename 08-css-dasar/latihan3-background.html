@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Styling</title>
+  <style>
+    body {
+      min-height: 100vh;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgb(15, 23, 42, 0.5), rgb(15, 23, 42, 0.1)), url(img/nature.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 4em;
+      font-style: italic;
+      text-transform: uppercase;
+      word-spacing: 20px;
+      letter-spacing: 10px;
+      text-decoration: none;
+      background-image: linear-gradient(to right, rgb(235, 0, 0), rgb(18, 101, 255));
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 10px rgba(226, 7, 113, 0.5));
+    }
+
+    span {
+      color: red;
+      text-shadow: 0 0 10px rgba(253, 9, 107, 0.7);
+    }
+
+    .quote {
+      font-size: 20px;
+      word-spacing: 10px;
+      line-height: 2em;
+      background-color: rgb(255, 255, 255, 0.2);
+      max-width: 700px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 20px;
+      border: 1 px solid rgb(255, 255, 255, 0.2);
+      box-shadow: 0 10px 30px rgba(95, 92, 92, 0.5);
+    }
+
+    .credit {
+      color: rgb(72, 72, 72, 0.9);
+      font-size: 10px;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      margin: 30px auto;
+      text-transform: uppercase;
+      width: 30%;
+      padding-top: 20px;
+      border-top: 2px solid rgba(5, 5, 5, 0.2);
+    }
+
+    /* .kotak-quote {
+      padding: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 2%;
+      background-color: rgba(123, 124, 128, 0.4);
+      background-filter: blur(5px);
+    } */
+  </style>
+</head>
+
+<body>
+  <h1>Fase Runtuh</h1>
+  <div class="kotak-quote">
+    <p class="quote">"Tak perlu khawatir, ku hanya <span>terluka</span>.<br> Terbiasa tuk pura-pura ketawa.<br> Namun
+      bolehkan
+      sekali saja ku menangis?<br> Sebelum kembali membohongi diri."</p>
+  </div>
+  <p class="credit">- feby putri feat. fiersa besari</p>
+</body>
+
+</html>
