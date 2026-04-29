@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Sneakers Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Barlow', sans-serif;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: white;
+      width: 330px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand {
+      font-size: 12px;
+      color: #06c;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product-name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .price-now {
+      margin-bottom: 20px;
+    }
+
+    .price-current {
+      font-size: 28px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .price-old {
+      font-size: 16px;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+
+    .size-options-wrapper {
+      border: none;
+    }
+
+    .size-label-text {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .size-option {
+      margin-bottom: 25px;
+    }
+
+    .size-option button[type="button"] {
+      width: 44px;
+      height: 44px;
+      border: 2px solid #d7d6d6;
+      color: #d7d6d6;
+      border-radius: 8px;
+      background-color: white;
+      font-weight: bold;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    .size-option button[type="button"]:hover {
+      color: rgb(255, 134, 134);
+      border: 2px solid rgb(255, 134, 134);
+      transition: 0.3s ease;
+    }
+
+    .btn-cart {
+      width: 100%;
+      padding: 16px;
+      background-color: #d90101;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: 0.3s ease;
+    }
+
+    .btn-cart:hover {
+      background-color: #b80000;
+    }
+
+    .btn-cart:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-image">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
+        alt="Nike Air Max Essential ">
+    </div>
+    <div class="card-body">
+      <p class="brand">Nike Sportswear</p>
+      <h1 class="product-name">Air Max Essential</h1>
+      <p class="product-desc">Kombinasi sempurna antara gaya retro dan kenyamanan modern, dilengkapi dengan teknologi
+        Air-Sole untuk bantalan yang responsif setiap hari.</p>
+    </div>
+    <div class="price-now">
+      <span class="price-current">Rp 1.899.000</span>
+      <del class="price-old">Rp 2.299.000</del>
+    </div>
+    <div class="size-options-wrapper">
+      <p class="size-label-text">Pilih Ukuran (US):</p>
+      <div class="size-option">
+        <button class="size-btn" type="button" onclick="selectSize(this)">8</button>
+        <button class="size-btn active" type="button" onclick="selectSize(this)">9</button>
+        <button class="size-btn" type="button" onclick="selectSize(this)">10</button>
+        <button class="size-btn" type="button" onclick="selectSize(this)">11</button>
+        <button class="size-btn" type="button" onclick="selectSize(this)">12</button>
+      </div>
+    </div>
+    <button class="btn-cart">Tambahkan ke Keranjang</button>
+  </div>
+</body>
+
+</html>
