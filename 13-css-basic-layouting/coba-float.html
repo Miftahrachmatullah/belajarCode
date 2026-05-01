@@ -51,9 +51,11 @@
       background-color: #f8fafc;
       padding: 10px;
       border-radius: 8px;
+      overflow: auto;
     }
 
     .kolom {
+      float: left;
       width: 31.33%;
       margin: 1%;
       padding: 20px;
@@ -66,9 +68,11 @@
     .gallery-container {
       padding: 10px;
       background-color: #f8fafc;
+      overflow: hidden;
     }
 
     .gallery-item {
+      float: left;
       width: 150px;
       height: 150px;
       margin: 10px;
@@ -89,6 +93,20 @@
       border-radius: 8px;
       margin-top: 50px;
     }
+
+    .img-left {
+      float: left;
+    }
+
+    .img-right {
+      float: right;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   </style>
 </head>
 
@@ -96,17 +114,29 @@
 
   <h1>Eksperimen CSS Float</h1>
 
-  <section class="text-wrapping">
+  <section class="text-wrapping clearfix">
     <h2>1. Text Wrapping</h2>
-    <img src="https://picsum.photos/id/10/200/200" alt="Gambar 1">
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dolor, culpa blanditiis pariatur ut quos
-      voluptatum commodi atque, ipsa est odio! Perferendis rerum similique, blanditiis, voluptatibus exercitationem
-      soluta minus laboriosam unde odit quas minima optio commodi culpa pariatur, aliquid ducimus. Eos distinctio
-      nesciunt aspernatur minus reiciendis quas aperiam atque quae!
+    <img src="https://picsum.photos/id/10/200/200" alt="Gambar 1" class="img-left">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sint, accusamus consequuntur praesentium dolore,
+      rerum laudantium adipisci aliquid ut distinctio reprehenderit nesciunt, cum quam odit deleniti harum incidunt
+      ipsam! Doloribus ab qui ad alias itaque culpa adipisci animi fugit laborum explicabo, eligendi quas ipsa, aperiam
+      inventore magnam delectus sequi dicta laboriosam. Accusantium ut, dicta quo, aliquam error ad incidunt soluta
+      quidem maxime id quibusdam. Accusamus eligendi placeat aperiam asperiores quod deleniti eum iste molestias facilis
+      est! Ex possimus delectus neque non ipsum alias voluptatibus? Ullam, quos aspernatur! Ipsam maiores, magnam, nisi
+      neque minus veritatis debitis modi voluptatum deserunt nostrum quia qui numquam tempore nesciunt iste! Illo ipsa
+      quis provident distinctio placeat modi, sapiente corrupti atque quam ut eveniet, libero aliquid consectetur
+      ducimus itaque incidunt officia commodi deserunt optio reprehenderit animi. Vel suscipit quae repellat tempore
+      quidem quas hic ut. Sapiente maiores molestiae reiciendis commodi a rem eum laborum, veniam iusto possimus iste
+      illum dolorem laudantium necessitatibus sunt. Commodi ducimus quas earum praesentium incidunt, facilis obcaecati
+      sed minima quibusdam velit? Magni quae dignissimos aliquid maxime id distinctio voluptatum, repellat ut sequi
+      alias quasi nulla eos. Est in ullam mollitia ea quas architecto tenetur aliquam, aut a cupiditate, nostrum, quis
+      sed rem officia ad animi quod qui nulla. Libero optio excepturi officia obcaecati, repellendus rerum corrupti
+      numquam repellat, autem sint quidem eius assumenda facilis eos. Illo provident excepturi veniam repellendus cum
+      delectus eos molestiae obcaecati labore ipsa earum maxime itaque, tenetur nihil a. Sapiente architecto labore
+      dolorum eos numquam suscipit cupiditate quibusdam?
     </p>
 
-    <img src="https://picsum.photos/id/20/200/200" alt="Gambar 2">
+    <img src="https://picsum.photos/id/20/200/200" alt="Gambar 2" class="img-right">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatum optio! Iure nam aspernatur ipsam
       maxime architecto, exercitationem dolores voluptates quia delectus! Animi, illum iusto rerum est consectetur quis
       vel amet? Nesciunt, harum alias eum fugit nemo fuga sit suscipit unde perferendis necessitatibus earum, possimus
